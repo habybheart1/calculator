@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 400px;
+    max-height: 100vh;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    height: 80px;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(0, 0%,70%);
+
+}
+button{
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #d4d4d4;
+}
+button:active{
+    background-color: #c0c0c0;
+}
+.operator-btn{
+    background-color: #ff9500;
+    color: #fff;
+}
+.operator-btn:hover{
+    background-color: #e08900;
+}
+.operator-btn:active{
+    background-color: #c06f00;
+}
+.operator-clear{
+    background-color: #ff3b30;
+    color: #fff;
+}
+.operator-clear:hover{
+    background-color: #e03228;
+}
+.operator-clear:active{
+    background-color: #c0261f;
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 5px;
+    place-items: center;
+}
+.zero{
+    grid-column: span 2;
+    width: 100%;
+}
+button:last-child{
+    grid-column: span 3;
+    width: 100%;
+}

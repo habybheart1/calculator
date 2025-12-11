@@ -19,7 +19,7 @@
     font-size: 2.5rem;
     text-align: right;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     border-radius: 10px;
     border: none;
     background-color: hsl(0, 0%,70%);
@@ -75,6 +75,35 @@ button:active{
     width: 100%;
 }
 button:last-child{
-    grid-column: span 3;
+    grid-column: span 2;
     width: 100%;
+}
+button span.material-symbols-outlined {
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button span.material-symbols-outlined:hover {
+    color: #555;
+}
+button span.material-symbols-outlined:active {
+    color: #333;
+}
+@media (max-width: 450px) {
+    .wrapper {
+        max-width: 100%;
+        margin: 20px;
+    }
+    #display {
+        height: 60px;
+        font-size: 2rem;
+    }
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    button span.material-symbols-outlined {
+        font-size: 2rem;
+    }
 }
